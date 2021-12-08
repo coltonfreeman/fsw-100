@@ -1,0 +1,41 @@
+h1{
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#headline{
+    color:green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+body> p{
+    line-height: 20px;
+}
+
+b{
+    color: lightcoral;
+
+}
+.upper{
+    text-transform: uppercase;
+}
+img {
+    float: left;
+    padding: 10px;
+  }
+* {
+   background-color: lightcyan; 
+
+}
+ol {
+    list-style-type: disc;
+  }
+  body.p{
+      font-style: italic;
+  }
+
+a:hover {
+    text-decoration: underline;
+}
