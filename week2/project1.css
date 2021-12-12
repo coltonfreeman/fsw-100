@@ -1,15 +1,18 @@
-h1{
+#main-header{
     color: blue;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
 
-#headline{
+.headline1{
     color:green;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
-
+.headline2{
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 body> p{
     line-height: 20px;
 }
@@ -20,6 +23,7 @@ b{
 }
 .upper{
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 img {
     float: left;
@@ -32,10 +36,7 @@ img {
 ol {
     list-style-type: disc;
   }
-  body.p{
-      font-style: italic;
-  }
-
 a:hover {
     text-decoration: underline;
 }
+  
