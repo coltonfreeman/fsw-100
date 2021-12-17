@@ -1,0 +1,84 @@
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0px 0px 0px 10px;
+    padding: 10px;
+}
+
+.logo{
+    font-size: 40px;
+    display: inline;
+    color: black;
+    text-align: left;
+}
+
+.logo2{
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(35, 72, 142);
+    width: 60%;
+    margin: 0px 0px 0px 30px;
+    border: 3px solid black;
+    
+}
+
+.logo2 a{
+    width: 35px;
+    height: 35px;
+    background-color: skyblue;
+
+}
+.logo2 a:hover{
+    color: rgb(199, 166, 188); ;
+}
+
+.navLinklist{
+    text-decoration: none;
+    list-style: none;
+    padding: auto;
+    position: relative;
+    display: inline;
+    margin: 0px 15px;
+}
+
+.navLinklist li{
+    display: inline-block;
+}
+.navLinklist li a{
+    color: steelblue;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+}
+.navLinklist li a:hover{
+    color: rgb(199, 166, 188);
+
+}
+nav{
+    display: inline;
+    position: relative;
+    text-align: right;
+    float: right;
+}
+.mainBody{
+    margin-top: 60px;
+    width: 100%;
+    background-color: blue;
+}
+.programPhoto{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+.programPhoto img{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
