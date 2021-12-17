@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 header{
     position: sticky;
     top: 0;
@@ -82,7 +84,7 @@ nav{
     width: 100%;
 }
 .programQuote{
-    font-style: italic;
+    font-family: 'Lobster', cursive;
     font-weight: bolder;
 
 }
