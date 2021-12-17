@@ -106,3 +106,11 @@ footer{
 .chat:hover{
     opacity: 2;
 }
+.vet{
+    position: fixed;
+    margin: 5px 5px 5px 5px;
+    bottom: -20px;
+}
+.vet:hover {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png");
+ }
