@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
+*{
+    background-color: cornflowerblue;
+}
 header{
-    position: sticky;
+    position: -webkit-sticky;
     top: 0;
     left: 0;
     width: 100%;
     margin: 0px 0px 0px 10px;
-    padding: 10px;
+    padding: -100px;
 }
 
 .logo{
@@ -14,6 +16,10 @@ header{
     display: inline;
     color: black;
     text-align: left;
+}
+.price td{
+    font-size: 100px;
+
 }
 
 .logo2{
@@ -23,8 +29,8 @@ header{
     text-align: center;
     background-color: rgb(35, 72, 142);
     width: 60%;
-    margin: 0px 0px 0px 30px;
-    border: 3px solid black;
+    margin: 10px 10px 10px 30px;
+    padding-bottom: 100px;
     
 }
 
@@ -34,6 +40,7 @@ header{
     border-radius: 10px;
     background-color: skyblue;
     text-decoration: none;
+    
 
 }
 .logo2 a:hover{
@@ -55,9 +62,9 @@ header{
     display: inline-block;
 }
 .navLinklist li a{
-    color: steelblue;
+    color: rgb(0, 8, 14);
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
     padding: 10px;
 }
 .navLinklist li a:hover{
@@ -71,9 +78,16 @@ nav{
     float: right;
 }
 .mainBody{
-    margin-top: 60px;
+    position: relative;
+    margin-top: 150px;
     width: 100%;
     background-color: blue;
+}
+.Us img{
+    position: relative;
+    display: inline-block;
+    bottom: 100px;
+    left: 900px;
 }
 .programPhoto{
     position: relative;
@@ -81,12 +95,60 @@ nav{
     width: 20%;
 }
 .programPhoto img{
+    position: relative;
+    display: inline;
+    top: 70px;
     width: 100%;
+}
+.photoGragher img{
+    position: absolute;
+    display: inline-block;
+    top: 75px;
+    right: 25px;
+    width: 15%;
 }
 .programQuote{
     font-family: 'Lobster', cursive;
-    font-weight: bolder;
+    font-weight: lighter;
+    font-size: 35px;
+    display: inline;
+    position: relative;
+    text-align: left;
+    top: 70px;
+    width: 100%;
 
+}
+.photoGragherQuote{
+    position: absolute;
+    display: inline-block;
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    right: 0px;
+    width: 15%;
+    bottom: 8px;
+    top: 325px;
+    font-size: 35px;
+}
+.freemans{
+    position: relative;
+    display: inline-block;
+    right:-650px;
+    width: 15%;
+    bottom: 75px;
+    font-size: 20px;
+}
+.list{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    top: -60px;
+}
+.list li{
+    text-decoration: none;
+    list-style-type: none;
 }
 footer{
     width: 100%;
@@ -104,7 +166,7 @@ footer{
     width: 250px
 }
 .chat:hover{
-    opacity: 2;
+    color:darkred;
 }
 .vet{
     position: fixed;
