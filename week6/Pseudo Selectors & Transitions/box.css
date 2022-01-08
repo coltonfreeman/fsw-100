@@ -1,0 +1,133 @@
+/*For this assignment, conduct the following:
+
+Make 6 small boxes. Each one, when moused over, should change 2 or 3 different properties of the box that was hovered.
+Every event should happen on hover, which you can just use the CSS :hover pseudo-selector for. 
+You choose which properties change, but try to vary it between each box. Here's a non-exhaustive list of something you could change about each box:
+Background color
+Border (width, color, style)
+Border radius (can target each corner individually if you want)
+Box shadow
+Height/width
+Margin/padding (put some text inside to better see what's happening)
+Position
+Opacity
+Challenge Task (no points deducted for not completing): Learn about the HTML5 <audio> tag and insert some music to play in the background. It's just like you're in the club!*/
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: blueviolet;
+}
+
+.box1:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid blueviolet;
+    margin-bottom: 20px;
+    background-color: black;
+    transition: background-color 1s ease-in 1s, width 2s ease-in-out;
+    opacity: 50%;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: orange;
+}
+
+.box2:hover {
+    width: 300px;
+    height: 200px;
+    border: 1px solid orange;
+    margin-bottom: 20px;
+    background-color: black;
+    border-style: dashed, double;
+    border-color: white;
+    transition: background-color 3s ease-in 3s, width 1s ease-in-out;
+    opacity: 40%;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: navy;
+}
+
+.box3:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    border: 1px solid navy;
+    margin-bottom: 20px;
+    background-color: black;
+    transition: background-color 1s ease-in 5s, width 2s ease-in-out;
+    opacity: 30%;
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: teal;
+}
+
+.box4:hover {
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid teal;
+    margin-bottom: 20px;
+    background-color: black;
+    transition: background-color 1s ease-in 1s, width 5s ease-in-out;
+    opacity: 20%;
+}
+
+.box5 {
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: lightsalmon;
+}
+
+.box5:hover {
+    width: 500px;
+    height: 100px;
+    border-radius: 100px;
+    border: 1px solid lightsalmon;
+    margin-bottom: 20px;
+    background-color: black;
+    transition: background-color 1s ease-in 1s, width 4s ease-in-out;
+    box-shadow: gold;
+}
+
+.box6 {
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    border: 1px solid black;
+    background-color: royalblue;
+}
+
+.box6:hover {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid green;
+    background-color: black;
+    border-color: red;
+    transition: background-color 1s ease-in 1s, width 3s ease-in-out;
+}
