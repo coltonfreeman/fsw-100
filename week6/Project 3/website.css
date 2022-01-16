@@ -9,6 +9,9 @@ body{
     
     
 }
+a {
+    color: white;
+}
 h1{
     font-size: 3rem;
     color: white;
@@ -197,6 +200,9 @@ h2{
     text-align: center;
 }
 @media only screen and (max-width: 1366px)  {
+    a:link{
+        color: white;
+    }
     h1{
         color: white;
         font-size: 4rem;
