@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-*{
+body{  
+    background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
     margin: 0;
     padding: 0;
+    
+    background-size: cover;
     box-sizing: border-box;
+    
+    
+}
+h1{
+    font-size: 3rem;
+    color: white;
 }
 
 #container {
@@ -13,25 +22,38 @@
     margin: 0 auto;
     gap: 1rem;
     height: 100%;
+    color: white;
 }
 
 #header {
-    grid-column: 1 / 5;
+    grid-column: 1/5;
+    display: flex;
     font-size: 2rem;
-    color: blue;
+    color: white;
     font-weight: bold;
-    padding: 1rem;
+    justify-content: space-between;
+    align-items: center
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
 }
 
-.grid-container-head{
-    display: grid;
-    text-align: right;
-    float: right;
+.grid-container-head{  
+    width: 50%;
+    color: white;
 }
 
 .grid-container-head a:hover {
-    color: red
- 
+    color: green;
+ }
+
+ .grid-container-head a:link{
+    text-decoration: none;
+    color: white;
  }
 #sidebar {
     display: grid;
@@ -41,31 +63,31 @@
     grid-column: 1/2;
     margin-top: 1rem;
     font-size: 1rem;
-    color: blue;
+    color: white;
     font-weight: bold;
    
     
 }
 
 #content {
-    background-color: lightskyblue;
+    
     display: grid;
     text-align: center;
     border-radius: 10%;
     grid-column: 2/ 4;
-    font-size: 8rem;
+    font-size: 4rem;
     color: white;
     font-weight: bold;
     padding: 20px;
 }
 #content a:hover{
-    color: red;
+    color: green;
 }
 .programQuote{
     font-family: 'Lobster', cursive;
     grid-template-rows: 1/2;
     font-weight: lighter;
-    font-size: 3rem;
+    font-size: 2rem;
     display: grid;
     position: relative;
     text-align: left;
@@ -87,16 +109,16 @@
     grid-template-rows: 1/2;
      width: 15%;
     bottom: 8px;
-    font-size: 35px;
+    font-size: 2rem;
 }
 .list{
     position: relative;
-    color: blue;
+    color: white;
     display: grid;
     text-decoration: none;
     width: 100%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     align-items: center;
 }
 .content{
@@ -107,17 +129,19 @@
 h2{
     text-align: center;
     display: grid;
+    font-size: 3rem;
 }
 .list li{
     text-decoration: none;
     list-style-type: none;
+    color: white;
 }
 #sidebar-2 {
     display: grid;
     grid-template-rows: 1fr,1fr;
     font-size: 5rem;
     font-family: 'Lobster', cursive;
-    color: blue;
+    color: white;
 }  
 #sidebar-2 img{
     width: 100%;
@@ -130,7 +154,7 @@ h2{
     border-radius: 8%;
     grid-column: 1 / 5;
     font-size: 1.5rem;
-    color: blue;
+    color: white;
     font-weight: bold;
     padding: 10px;
 }
@@ -148,8 +172,8 @@ h2{
     position: relative;
 }
 .chat{
-    background-color:blue;
-    font-size: 3rem;
+    background-color: green;
+    font-size: 1rem;
     text-align: center;
     color: white;
     cursor: pointer;
@@ -161,24 +185,19 @@ h2{
     width: 16rem;
 }
 .chat:hover{
-    color:red;
+    color:black;
 }
 .vet img{
     position:absolute;
     display: grid;
-    bottom: .1rem;
+
     left: 19rem;
-   
-   
-   
 }
 .copyright{
     text-align: center;
 }
-
 @media only screen and (max-width: 1366px)  {
     h1{
-        background-color: blue;
         color: white;
         font-size: 4rem;
         text-align: center;
@@ -188,31 +207,42 @@ h2{
         text-align: center;
     }
     nav a {
-        color: blue;
+        color: white;
         text-decoration: none;
         text-align: center;
 
     }
     @media only screen and (max-width: 768px) {
+        #content{
+        
+            align-content: center;
+            font-size: 1rem;
+            display: inline;
+            float: left;
+        }
         h1{
-            background-color: white;
-            color: blue;
+            
+            color: white;
             font-size: 2rem;
             text-align: center;
       
         }
         h2{
             text-align: center;
+            font-size: 2rem;
         }
         nav a {
             color: white;
-            background-color: blue;
             border-radius: 1rem;
             text-decoration: none;
+            align-content: center;
             
         } 
+        #sidebar img,#sidebar-2 img{
+            display: 50%;
+        }    
         chat{
-            font-size: 2rem;
+            font-size: 1rem;
             align-items: center;
         }
         .vet img{
@@ -226,69 +256,48 @@ h2{
       } 
     }
 @media screen and (max-width: 498px) {
+    
+    #content{
+        align-content: center;
+        font-size: .75rem;
+    }
+    
     h1{
-        background-color: blue;
+         width: 40%;
         color: white;
-        font-size: 1rem;
-        text-align: center;
+        font-size: .75rem;
+        align-content: center;
   
     }
     h2{
         text-align: center;
+        font-size: .75rem;
     }
-    nav a {
+    nav {
+        display: inline;
+        font-size: .75rem;
+        float: left;
         color: white;
-        background-color: blue;
-
+        align-content: center;
         text-decoration: none;
-        text-align: center;
+        text-align: left;
     } 
-}
-    #sidebar img, #sidebar-2 img  {
-        display: none;
-        
+    .list li{
+       
+        display: inline;
+        float: 
+        align-content: center;  
+        font-size: .75rem
     }
     #content {
-        font-size: 2rem;
+       
+        font-size: 1rem;
         align-items: center;
     }
-    #sidebar {
-       
+    #sidebar,#sidebar-2 {
+       display: none;
+    }
+    #footer{
         display: none;
     }
-    #sidebar-2 {
-        
-        display: none;
-    }
-
-.list{
-    font-size: 2.5rem;
-    align-items: center;
-}
-.chat{
-    font-size: 2rem;
-    align-items: center;
-}
-.vet img{
-    display: none;
-}
-.us{
-    display: none;
-}
-.freemans{
-    display: none;
-}chat{
-    font-size: 2rem;
-    align-items: center;
-}
-.vet img{
-    display: none;
-}
-.us{
-    display: none;
-}
-.freemans{
-    display: none
-}   
-
-  
+}    
