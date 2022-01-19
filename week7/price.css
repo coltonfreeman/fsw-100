@@ -1,52 +1,79 @@
 body{
   background-color: green;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-  
-  /* Create three columns of equal width */
-  .columns {
-    float: left;
-    width: 40%;
-    padding: 1rem;
-  }
-  
-  /* Style the list */
-  .price {
+a {
+  color: white;
+}
+h1{
+  font-size: 3rem;
+  color: white;
+}
+#header {
+  grid-column: 1/5;
+  display: flex;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+.grid-container-head{  
+  width: 100%;
+  color: white;
+}
+.grid-container-head a:hover {
+  color: black;
+}
+.grid-container-head a:link{
+  text-decoration: none;
+  color: white;
+}
+.columns {
+    display: flexbox;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    padding: .5rem;
+    margin-left: 30em;
+}
+.price {
     list-style-type: none;
-    border: 1rem solid #eee;
+    border: .5rem solid #eee;
     margin: 0;
     padding: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-  }
-  
-  /* Add shadows on hover */
-  .price:hover {
+}
+.price:hover {
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-  }
-  
-  /* Pricing header */
-  .price .header {
+}
+.price .header {
     background-color: #111;
     color: white;
     font-size: 2rem;
-  }
-  
-  /* List items */
-  .price li {
+}
+.price li {
     border-bottom: 2rem solid #eee;
-    padding: 2 rem;
+    padding:  1rem;
     text-align: center;
     color: white;
-  }
+}
   
-  /* Grey list item */
-  .price  {
+.price {
     font-size: 2rem;
-  }
+}
   
-  /* The "Sign Up" button */
-  .button {
+.button {
     background-color: black;
     border: none;
     color: white;
@@ -54,11 +81,58 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: 1.5rem;
-  }
+}
+#footer {
+    display: flexbox;
+    flex-direction: column;
+    border-radius: 8%;
+    grid-column: 1 / 5;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.us img{
+    left: 8rem;
+    height: 100%;
+    width: 10%;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    object-fit: cover;
+}
+.freemans{
+    font-size: 2rem;
+    display: flex;
+    position: relative;
+}
+.chat{
+  background-color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  border-radius: 8rem;
+  opacity: .7;
+  position: fixed;
+  bottom:1rem;
+  right: .7rem;
+  width: 16rem;
+}
+.chat:hover{
+  color:yellowgreen;
+}
+.vet img{
+  position:absolute;
+  display: grid;
+
+  left: 19rem;
+}
+.copyright{
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
   
-  
-  @media only screen and (max-width: 600px) {
-    .columns {
+  .columns {
       width: 100%;
     }
   }
